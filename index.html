@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>gtw- guess the word</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1> Guess-A-Word</h1>
+<p> Play this game by typing a letter to guess, and if you're lucky, it will be part of the word! Words may have dashes and/or apostrophes. You may have 8 incorrect guesses.</p>
+<button onclick="startGame()"> New game </button>
+<p> Guessed Letters: </p>
+<p id="guesses"> </p>
+<p id="info"> </p>
+<p id="puzzle"> </p>
+<p id = "guessesLeft">Type in your guess:</p>
+<input  type="text" id="guess" maxlength = "1">
+<p class="gtw"> 
+  <button onclick="guessLetter()"> Guess! </button> </p>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

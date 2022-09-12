@@ -1,0 +1,54 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+
+body{
+  background: linear-gradient(#1d1a51,#1d1a51);
+}
+
+
+h1 {
+  text-align: center;
+ }
+
+
+ #game-board {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+/* on screen keyboard css  */
+
+#keyboard-cont {
+  margin: 1rem 0;
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+#keyboard-cont div {
+  display: flex;
+  
+}
+
+.second-row {
+  margin: 0.5rem 0;
+}
+
+.keyboard-button {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.6rem;
+  padding-top:2vh;
+  margin: 2px 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: darkslategrey;
+  border-radius: 5px;
+}

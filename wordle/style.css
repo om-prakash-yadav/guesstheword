@@ -1,0 +1,60 @@
+h1,p{
+ text-align: center;
+ color: #fff;
+}
+
+#game-board {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.letter-box {
+  border: 2px solid gray;
+  border-radius: 3px;
+  margin: 2px;
+  font-size: 2rem;
+  font-weight: 700;
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.filled-box {
+  color: #fff;
+}
+
+.letter-row {
+  display: flex;
+}
+
+#keyboard-cont {
+  margin-top:28vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#keyboard-cont div {
+  display: flex;
+}
+
+.second-row {
+  margin: 0.5rem 0;
+}
+
+.keyboard-button {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.8rem;
+  margin: 0 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #fff;
+  background: #818384;
+  border-radius: 5px;
+  border: none;
+}

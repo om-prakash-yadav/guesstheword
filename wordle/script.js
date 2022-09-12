@@ -107,7 +107,8 @@ function checkGuess () {
     }
 
     if (guessString === rightGuessString) {
-        toastr.success("You guessed right! Game over!")
+        winImage();
+        playAgain();
         guessesRemaining = 0
         return
     } else {
@@ -198,3 +199,16 @@ document.getElementById("keyboard-cont").addEventListener("click", (e) => {
 })
 
 initBoard();
+
+
+function winImage() {
+    document.body.style.background = "url('../win.gif') no-repeat  top";
+  }
+
+  function playAgain(){
+    var x = document.createElement("BUTTON");
+    x.classList="btn btn-lg  btn-light mt-5 mx-auto";
+    x.innerText="Play Again";
+    x.onclick= function () {location.reload();}
+    document.getElementById("playAgain").appendChild(x);
+  };
